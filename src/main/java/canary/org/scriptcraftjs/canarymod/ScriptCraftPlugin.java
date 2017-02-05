@@ -24,7 +24,8 @@ public class ScriptCraftPlugin extends Plugin implements PluginListener, Command
 {
     public boolean canary = true;
     public boolean bukkit = false;
-    private String NO_JAVASCRIPT_MESSAGE = "No JavaScript Engine available. " + 
+    public boolean sponge = false;
+    private String NO_JAVASCRIPT_MESSAGE = "No JavaScript Engine available. " +
         "ScriptCraft will not work without Javascript.";
     protected ScriptEngine engine = null;
 

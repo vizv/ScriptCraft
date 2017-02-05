@@ -9,10 +9,12 @@
   -->
   <property name="src.canary" location="src/main/java/canary"/>
   <property name="src.bukkit" location="src/main/java/bukkit"/>
+  <property name="src.sponge" location="src/main/java/sponge"/>
 
   <!-- compiles against these libraries -->
   <property name="lib.canary" location="lib/canarymod-1.8.0.jar"/>
   <property name="lib.bukkit" location="lib/spigot-1.11.2.jar"/>
+  <property name="lib.sponge" location="lib/spongeapi-6.0.0-20170201.184449-36-shaded.jar"/>
 
   <property name="build" location="target/classes"/>
   <property name="dist" location="target/" />
@@ -31,6 +33,7 @@
           <pathelement path="${build}"/>      
 	  <pathelement path="${lib.canary}"/>
 	  <pathelement path="${lib.bukkit}"/>
+      <pathelement path="${lib.sponge}"/>
 	</classpath>
       <arg value="@{src}"/>
       <js-args/>
@@ -64,9 +67,11 @@
            debug="true">
       <src path="${src.canary}"/>
       <src path="${src.bukkit}"/>
+      <src path="${src.sponge}"/>
       <classpath>
 	<pathelement path="${lib.canary}" />
 	<pathelement path="${lib.bukkit}" />
+    <pathelement path="${lib.sponge}" />
       </classpath>
     </javac>
   </target>

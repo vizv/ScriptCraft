@@ -16,6 +16,7 @@ public class ScriptCraftPlugin extends JavaPlugin implements Listener
 {
     public boolean canary = false;
     public boolean bukkit = true;
+    public boolean sponge = false;
     // right now all ops share the same JS context/scope
     // need to look at possibly having context/scope per operator
     //protected Map<CommandSender,ScriptCraftEvaluator> playerContexts = new HashMap<CommandSender,ScriptCraftEvaluator>();

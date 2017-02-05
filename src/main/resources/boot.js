@@ -73,7 +73,7 @@ var __scboot = null;
     }
 
     for (i = 0; i < len;i++){
-      if ( plugin.canary ) {
+      if ( plugin.canary || plugin.sponge ) {
 	zis = new ZipInputStream(classLoader.getResourceAsStream(zips[i] + '.zip'));
 	unzip( zis, logger );
       } else {
